@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Agro Forte - Futuro Sustentável</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOPO -->
+
+  <header class="topo">
+
+    <div class="overlay"></div>
+
+    <div class="conteudo-topo">
+
+      <h1>🌱 AGRO FORTE</h1>
+
+      <p>
+        Defenda o planeta usando energia limpa,
+        tecnologia verde e sustentabilidade.
+      </p>
+
+    </div>
+
+  </header>
+
+  <!-- HUD -->
+
+  <section class="hud">
+
+    <div class="info">
+      ⚡ Energia:
+      <span id="energia">200</span>
+    </div>
+
+    <div class="info">
+      🌎 Pontos:
+      <span id="pontos">0</span>
+    </div>
+
+  </section>
+
+  <!-- MENU -->
+
+  <section class="menu">
+
+    <button class="card" onclick="selecionarPlanta('solar')">
+      ☀️ Solar
+      <small>50</small>
+    </button>
+
+    <button class="card" onclick="selecionarPlanta('vento')">
+      🌬️ Eólica
+      <small>75</small>
+    </button>
+
+    <button class="card" onclick="selecionarPlanta('agua')">
+      💧 Água
+      <small>100</small>
+    </button>
+
+  </section>
+
+  <!-- JOGO -->
+
+  <main class="game-area">
+
+    <div class="cenario"></div>
+
+    <div class="grid" id="grid"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
